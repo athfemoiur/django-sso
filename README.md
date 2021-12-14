@@ -33,6 +33,21 @@ pip install -r requirements.txt
 ```
 Now You must create .env file in the project dir and fill the variables according to .env-sample file
 
+Then you should have a superuser for accessing the admin panel 
+```bash
+SECRET_KEY=''
+DEBUG=True
+ALLOWED_HOSTS='*'
+
+DB_NAME=''
+DB_USER=''
+DB_PASSWORD=''
+DB_HOST='localhost'
+DB_PORT=5432
+
+GOOGLE_KEY=''
+GOOGLE_SECRET=''
+```
 
 Then you should have a superuser for accessing the admin panel 
 ```bash
@@ -42,7 +57,7 @@ Then migrating
 ```bash
 python manage.py migrate
 ```
-That's finished now you can run the project , I hope so actually :)
+That's finished now you can run the project
 
 ```bash
 python manage.py runserver
